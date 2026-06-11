@@ -247,7 +247,7 @@ body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
   font-weight: var(--font-body-weight);
 }
 
-h1,
+/* h1,
 h2,
 h3,
 h4,
@@ -265,7 +265,7 @@ h5,
   color: rgb(var(--color-foreground));
   line-height: calc(1 + 0.3 / max(1, var(--font-heading-scale)));
   word-break: break-word;
-}
+} */
 
 .hxxl {
   font-size: clamp(calc(var(--font-heading-scale) * 5.6rem), 14vw, calc(var(--font-heading-scale) * 7.2rem));
@@ -305,28 +305,28 @@ h1,
   }
 }
 
-h2,
+/* h2,
 .h2 {
   font-size: calc(var(--font-heading-scale) * 2rem);
-}
+} */
 
-@media only screen and (min-width: 750px) {
+/* @media only screen and (min-width: 750px) {
   h2,
   .h2 {
     font-size: calc(var(--font-heading-scale) * 2.4rem);
   }
-}
+} */
 
-h3,
+/* h3,
 .h3 {
   font-size: calc(var(--font-heading-scale) * 1.7rem);
-}
+} */
 
 @media only screen and (min-width: 750px) {
-  h3,
+  /* h3,
   .h3 {
     font-size: calc(var(--font-heading-scale) * 1.8rem);
-  }
+  } */
 }
 
 h4,
@@ -348,12 +348,12 @@ h5,
   }
 }
 
-h6,
+/* h6,
 .h6 {
-  color: rgba(var(--color-foreground), 0.75);
+  color: var(--color-heading);
   margin-block-start: 1.67em;
   margin-block-end: 1.67em;
-}
+} */
 
 blockquote {
   font-style: italic;

@@ -1,0 +1,38 @@
+<div
+  class="faqs-right relative flex-1 mb-0-important"
+>
+  {% content_for 'blocks' %}
+</div>
+{% style %}
+  .faqs-right .faq-section-items {
+    display: block;
+    width: 100%;
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .faqs-right .faq-section-title {
+    padding-right: 2rem;
+  }
+
+  .faqs-right .open-children-toggle {
+    left: auto;
+    width: 4rem;
+  }
+{% endstyle %}
+
+{% schema %}
+{
+  "name": "t:sections.faqs-page.blocks.question.group_faq_content",
+  "tag": null,
+  "blocks": [
+    {
+      "type": "_c_group-page-faq-item"
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:sections.faqs-page.blocks.question.group_faq_content"
+    }
+  ]
+}
+{% endschema %}

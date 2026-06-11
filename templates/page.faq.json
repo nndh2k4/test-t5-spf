@@ -1,0 +1,434 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "custom_collapsible_content_WfJTYM": {
+      "type": "custom-collapsible-content",
+      "blocks": {
+        "faq_items_CRK7nL": {
+          "type": "faq-items",
+          "settings": {
+            "faq_title": "Frequently Asked Questions?",
+            "faq_content": "Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore."
+          }
+        },
+        "faq_items_BJmchh": {
+          "type": "faq-items",
+          "settings": {
+            "faq_title": "Frequently Asked Questions?",
+            "faq_content": "Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore."
+          }
+        },
+        "faq_items_fQ4wRd": {
+          "type": "faq-items",
+          "settings": {
+            "faq_title": "Frequently Asked Questions?",
+            "faq_content": "Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore."
+          }
+        },
+        "faq_items_Hiby9X": {
+          "type": "faq-items",
+          "settings": {
+            "faq_title": "Frequently Asked Questions?",
+            "faq_content": "Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore."
+          }
+        },
+        "faq_items_TfJV4F": {
+          "type": "faq-items",
+          "settings": {
+            "faq_title": "Frequently Asked Questions?",
+            "faq_content": "Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore."
+          }
+        },
+        "faq_items_VBFKt3": {
+          "type": "faq-items",
+          "settings": {
+            "faq_title": "Frequently Asked Questions?",
+            "faq_content": "Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore."
+          }
+        },
+        "faq_items_hxriMx": {
+          "type": "faq-items",
+          "settings": {
+            "faq_title": "Frequently Asked Questions?",
+            "faq_content": "Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore."
+          }
+        },
+        "faq_items_X4qzJC": {
+          "type": "faq-items",
+          "settings": {
+            "faq_title": "Frequently Asked Questions?",
+            "faq_content": "Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore."
+          }
+        }
+      },
+      "block_order": [
+        "faq_items_CRK7nL",
+        "faq_items_BJmchh",
+        "faq_items_fQ4wRd",
+        "faq_items_Hiby9X",
+        "faq_items_TfJV4F",
+        "faq_items_VBFKt3",
+        "faq_items_hxriMx",
+        "faq_items_X4qzJC"
+      ],
+      "name": "Custom Collapsible",
+      "settings": {
+        "section_width": "container",
+        "color_scheme": "",
+        "heading": "Help Center",
+        "description": "<p>Please use the below form. You can also call customer service on +1 (973) 435-3638.</p>",
+        "header_size": "medium",
+        "header_alignment": "center",
+        "padding_top": 100,
+        "padding_bottom": 100,
+        "reset_spacing": false
+      }
+    },
+    "custom_page_faq_q9PAAU": {
+      "type": "custom-page-faq",
+      "blocks": {
+        "c_message_page_faqs_PkeKAj": {
+          "type": "_c_message-page-faqs",
+          "name": "Content",
+          "settings": {
+            "background_color": "#f5f5f5",
+            "content_padding_block": 40,
+            "content_padding_inline": 40
+          },
+          "blocks": {
+            "heading_3aeJPK": {
+              "type": "heading",
+              "name": "t:sections.all.contents.heading.label",
+              "settings": {
+                "heading": "Contact Us",
+                "font_size": 24,
+                "font_weight": "heading_weight",
+                "uppercase": false,
+                "spacing_bottom": 20
+              },
+              "blocks": {}
+            },
+            "description_xAdQXX": {
+              "type": "description",
+              "name": "t:blocks.general.text.name",
+              "settings": {
+                "text": "<p>If you have an issue or question that requires immediate assistance, you can click the button below to chat live with a Customer Service representative.</p>",
+                "font_size": 14,
+                "font_weight": "body_weight",
+                "spacing_bottom": 10
+              },
+              "blocks": {}
+            },
+            "description_byMTD9": {
+              "type": "description",
+              "name": "t:blocks.general.text.name",
+              "settings": {
+                "text": "<p>Please allow 3 - 5 business days from the time your package arrives back to us for a refund to be issued.</p>",
+                "font_size": 14,
+                "font_weight": "body_weight",
+                "spacing_bottom": 10
+              },
+              "blocks": {}
+            },
+            "button_iWkjwB": {
+              "type": "button",
+              "name": "t:sections.all.contents.button.label",
+              "settings": {
+                "show_full_width": true,
+                "first_button_label": "Contact Us",
+                "first_button_link": "",
+                "first_button_type": "outline",
+                "second_button_label": "About us",
+                "second_button_link": "",
+                "second_button_type": "primary",
+                "spacing_bottom": 10
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "heading_3aeJPK",
+            "description_xAdQXX",
+            "description_byMTD9",
+            "button_iWkjwB"
+          ]
+        },
+        "c_group_page_faq_content_nVmhq8": {
+          "type": "_c_group-page-faq-content",
+          "name": "t:sections.faqs-page.blocks.question.group_faq_content",
+          "settings": {},
+          "blocks": {
+            "c_group_page_faq_item_GNhNHm": {
+              "type": "_c_group-page-faq-item",
+              "name": "t:sections.faqs-page.blocks.question.group_faq_item",
+              "settings": {
+                "spacing_bottom": 30
+              },
+              "blocks": {
+                "heading_cqPPUh": {
+                  "type": "heading",
+                  "settings": {
+                    "heading": "Questions heading",
+                    "font_size": 24,
+                    "font_weight": "heading_weight",
+                    "uppercase": false,
+                    "spacing_bottom": 10
+                  },
+                  "blocks": {}
+                },
+                "c_faq_item_CExyjw": {
+                  "type": "_c_faq-item",
+                  "name": "t:sections.faqs-page.blocks.question.name",
+                  "settings": {
+                     "faq_title": "Pellentesque habitant morbi tristique senectus et netus?",
+                    "faq_content": "Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore."
+                  },
+                  "blocks": {}
+                },
+                "c_faq_item_EUCVWc": {
+                  "type": "_c_faq-item",
+                  "settings": {
+                    "faq_title": "How much is shipping and how long will it take?",
+                    "faq_content": "Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore."
+                  },
+                  "blocks": {}
+                },
+                "c_faq_item_kB43gy": {
+                  "type": "_c_faq-item",
+                  "settings": {
+                    "faq_title": "How long will it take to get my package?",
+                    "faq_content": "Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore."
+                  },
+                  "blocks": {}
+                },
+                "c_faq_item_6xDpaN": {
+                  "type": "_c_faq-item",
+                  "settings": {
+                    "faq_title": "Branding is simply a more efficient way to sell things?",
+                    "faq_content": "Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore."
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "heading_cqPPUh",
+                "c_faq_item_CExyjw",
+                "c_faq_item_EUCVWc",
+                "c_faq_item_kB43gy",
+                "c_faq_item_6xDpaN"
+              ]
+            },
+            "c_group_page_faq_item_MG9pp3": {
+              "type": "_c_group-page-faq-item",
+              "name": "t:sections.faqs-page.blocks.question.group_faq_item",
+              "settings": {
+                "spacing_bottom": 30
+              },
+              "blocks": {
+                "heading_XBgLFQ": {
+                  "type": "heading",
+                  "settings": {
+                    "heading": "Questions heading",
+                    "font_size": 24,
+                    "font_weight": "heading_weight",
+                    "uppercase": false,
+                    "spacing_bottom": 10
+                  },
+                  "blocks": {}
+                },
+                "c_faq_item_XTeiMQ": {
+                  "type": "_c_faq-item",
+                  "name": "t:sections.faqs-page.blocks.question.name",
+                  "settings": {
+                    "faq_title": "Pellentesque habitant morbi tristique senectus et netus?",
+                    "faq_content": "Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore."
+                  },
+                  "blocks": {}
+                },
+                "c_faq_item_YjLaKp": {
+                  "type": "_c_faq-item",
+                  "settings": {
+                    "faq_title": "How much is shipping and how long will it take?",
+                    "faq_content": "Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore."
+                  },
+                  "blocks": {}
+                },
+                "c_faq_item_k8TtzW": {
+                  "type": "_c_faq-item",
+                  "settings": {
+                    "faq_title": "How long will it take to get my package?",
+                    "faq_content": "Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore."
+                  },
+                  "blocks": {}
+                },
+                "c_faq_item_GfwB4J": {
+                  "type": "_c_faq-item",
+                  "settings": {
+                    "faq_title": "Branding is simply a more efficient way to sell things?",
+                    "faq_content": "Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore."
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "heading_XBgLFQ",
+                "c_faq_item_XTeiMQ",
+                "c_faq_item_YjLaKp",
+                "c_faq_item_k8TtzW",
+                "c_faq_item_GfwB4J"
+              ]
+            },
+            "c_group_page_faq_item_kJthTm": {
+              "type": "_c_group-page-faq-item",
+              "name": "t:sections.faqs-page.blocks.question.group_faq_item",
+              "settings": {
+                "spacing_bottom": 30
+              },
+              "blocks": {
+                "heading_8jQFjy": {
+                  "type": "heading",
+                  "settings": {
+                    "heading": "Questions heading",
+                    "font_size": 24,
+                    "font_weight": "heading_weight",
+                    "uppercase": false,
+                    "spacing_bottom": 10
+                  },
+                  "blocks": {}
+                },
+                "c_faq_item_NMyEVG": {
+                  "type": "_c_faq-item",
+                  "name": "t:sections.faqs-page.blocks.question.name",
+                  "settings": {
+                    "faq_title": "Pellentesque habitant morbi tristique senectus et netus?",
+                    "faq_content": "Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore."
+                  },
+                  "blocks": {}
+                },
+                "c_faq_item_F3anUh": {
+                  "type": "_c_faq-item",
+                  "settings": {
+                    "faq_title": "How much is shipping and how long will it take?",
+                    "faq_content": "Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore."
+                  },
+                  "blocks": {}
+                },
+                "c_faq_item_rYtYwk": {
+                  "type": "_c_faq-item",
+                  "settings": {
+                    "faq_title": "How long will it take to get my package?",
+                    "faq_content": "Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore."
+                  },
+                  "blocks": {}
+                },
+                "c_faq_item_3GnKjR": {
+                  "type": "_c_faq-item",
+                  "settings": {
+                    "faq_title": "Branding is simply a more efficient way to sell things?",
+                    "faq_content": "Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore."
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "heading_8jQFjy",
+                "c_faq_item_NMyEVG",
+                "c_faq_item_F3anUh",
+                "c_faq_item_rYtYwk",
+                "c_faq_item_3GnKjR"
+              ]
+            },
+            "c_group_page_faq_item_cQpnzf": {
+              "type": "_c_group-page-faq-item",
+              "name": "t:sections.faqs-page.blocks.question.group_faq_item",
+              "settings": {
+                "spacing_bottom": 30
+              },
+              "blocks": {
+                "heading_xckkaL": {
+                  "type": "heading",
+                  "settings": {
+                    "heading": "Questions heading",
+                    "font_size": 24,
+                    "font_weight": "heading_weight",
+                    "uppercase": false,
+                    "spacing_bottom": 10
+                  },
+                  "blocks": {}
+                },
+                "c_faq_item_HKkwYe": {
+                  "type": "_c_faq-item",
+                  "name": "t:sections.faqs-page.blocks.question.name",
+                  "settings": {
+                    "faq_title": "Pellentesque habitant morbi tristique senectus et netus?",
+                    "faq_content": "Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore."
+                  },
+                  "blocks": {}
+                },
+                "c_faq_item_WgWiW8": {
+                  "type": "_c_faq-item",
+                  "settings": {
+                    "faq_title": "How much is shipping and how long will it take?",
+                    "faq_content": "Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore."
+                  },
+                  "blocks": {}
+                },
+                "c_faq_item_nggNkL": {
+                  "type": "_c_faq-item",
+                  "settings": {
+                    "faq_title": "How long will it take to get my package?",
+                    "faq_content": "Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore."
+                  },
+                  "blocks": {}
+                },
+                "c_faq_item_bCHHWr": {
+                  "type": "_c_faq-item",
+                  "settings": {
+                    "faq_title": "Branding is simply a more efficient way to sell things?",
+                    "faq_content": "Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore."
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "heading_xckkaL",
+                "c_faq_item_HKkwYe",
+                "c_faq_item_WgWiW8",
+                "c_faq_item_nggNkL",
+                "c_faq_item_bCHHWr"
+              ]
+            }
+          },
+          "block_order": [
+            "c_group_page_faq_item_GNhNHm",
+            "c_group_page_faq_item_MG9pp3",
+            "c_group_page_faq_item_kJthTm",
+            "c_group_page_faq_item_cQpnzf"
+          ]
+        }
+      },
+      "block_order": [
+        "c_message_page_faqs_PkeKAj",
+        "c_group_page_faq_content_nVmhq8"
+      ],
+      "name": "Custom FAQs Page",
+      "settings": {
+        "section_width": "container",
+        "padding_top": 50,
+        "padding_bottom": 58
+      }
+    }
+  },
+  "order": [
+    "custom_collapsible_content_WfJTYM",
+    "custom_page_faq_q9PAAU"
+  ]
+}

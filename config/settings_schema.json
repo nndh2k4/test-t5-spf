@@ -60,6 +60,12 @@
           },
           {
             "type": "color",
+            "id": "heading_color",
+            "label": "t:settings_schema.colors.settings.heading_color.label",
+            "default": "#111111"
+          },
+          {
+            "type": "color",
             "id": "button",
             "label": "t:settings_schema.colors.settings.button_background.label",
             "default": "#121212"
@@ -81,6 +87,57 @@
             "id": "shadow",
             "label": "t:settings_schema.colors.settings.shadow.label",
             "default": "#121212"
+          },
+          {
+            "type": "color",
+            "id": "border_color",
+            "label": "t:settings_schema.colors.settings.border_color.label",
+            "default": "#ebebeb",
+            "alpha": true
+          },
+          {
+            "type": "header",
+            "content": "t:settings_schema.colors.settings.header.button_primary"
+          },
+          {
+            "type": "color",
+            "id": "btn_primary_color",
+            "label": "t:settings_schema.colors.name",
+            "default": "#fff"
+          },
+          {
+            "type": "color",
+            "id": "btn_primary_hover_color",
+            "label": "t:settings_schema.colors.settings.hover_color.label",
+            "default": "#fff"
+          },
+          {
+            "type": "color",
+            "id": "btn_primary_hover_background",
+            "label": "t:settings_schema.colors.settings.hover_background.label",
+            "default": "#000"
+          },
+          {
+            "type": "color",
+            "id": "btn_primary_background",
+            "label": "t:settings_schema.colors.settings.background.label",
+            "default": "#111111"
+          },
+          {
+            "type": "header",
+            "content": "t:settings_schema.colors.settings.header.button_outline"
+          },
+          {
+            "type": "color",
+            "id": "btn_outline_color",
+            "label": "t:settings_schema.colors.name",
+            "default": "#111111"
+          },
+          {
+            "type": "color",
+            "id": "btn_outline_border_color",
+            "label": "t:settings_schema.colors.settings.border_color.label",
+            "default": "#111111"
           }
         ],
         "role": {
@@ -143,6 +200,44 @@
         "unit": "%",
         "label": "t:settings_schema.typography.settings.body_scale.label",
         "default": 100
+      },
+      {
+        "type": "range",
+        "id": "body_font_size",
+        "min": 10,
+        "max": 20,
+        "step": 1,
+        "unit": "px",
+        "label": "t:settings_schema.typography.settings.font_size.label",
+        "default": 14
+      },
+      {
+        "type": "select",
+        "id": "heading_letter_spacing",
+        "label": "t:settings_schema.typography.settings.letter_spacing.label",
+        "default": "unset",
+        "options": [
+          {
+            "value": "negative",
+            "label": "t:settings_schema.typography.settings.letter_spacing.negative.label"
+          },
+          {
+            "value": "unset",
+            "label": "t:settings_schema.typography.settings.letter_spacing.unset.label"
+          },
+          {
+            "value": "0.005em",
+            "label": "t:settings_schema.typography.settings.letter_spacing.small.label"
+          },
+          {
+            "value": "0.025em",
+            "label": "t:settings_schema.typography.settings.letter_spacing.medium.label"
+          },
+          {
+            "value": "0.05em",
+            "label": "t:settings_schema.typography.settings.letter_spacing.large.label"
+          }
+        ]
       }
     ]
   },
@@ -158,6 +253,17 @@
         "default": 1200,
         "unit": "px",
         "label": "t:settings_schema.layout.settings.page_width.label"
+      },
+      {
+        "type": "range",
+        "id": "fluid_container_width",
+        "min": 1200,
+        "max": 1800,
+        "step": 10,
+        "unit": "px",
+        "label": "t:settings_schema.layout.settings.fluid_container_width.label",
+        "info": "t:settings_schema.layout.settings.fluid_container_width.info",
+        "default": 1410
       },
       {
         "type": "range",

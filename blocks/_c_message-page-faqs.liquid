@@ -1,0 +1,79 @@
+<div
+  class="col-md-w-custom rounded-style faq-message-column"
+  style="--col-width: 35%;"
+>
+  <div
+    class="background-custom faq_contact rounded-style py-custom px-custom faq-message-sticky"
+    style="
+      --padding-inline: {{ block.settings.content_padding_inline }};
+      --padding-block: {{ block.settings.content_padding_block }};
+      background-color: {{ block.settings.background_color }};
+    "
+  >
+    {% content_for 'blocks' %}
+  </div>
+</div>
+
+{% style %}
+  @media screen and (min-width: 768px) {
+    .faq-message-column {
+      align-self: stretch;
+    }
+
+    .faq-message-sticky {
+      position: sticky;
+      top: 30px;
+    }
+  }
+{% endstyle %}
+
+{% schema %}
+{
+  "name": "t:sections.faqs-page.name",
+  "tag": null,
+  "blocks": [
+    {
+      "type": "description"
+    },
+    {
+      "type": "heading"
+    },
+    {
+      "type": "button"
+    }
+  ],
+  "settings": [
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "t:settings_schema.badges.settings.background_color.label",
+      "default": "#f5f5f5"
+    },
+    {
+      "type": "range",
+      "id": "content_padding_block",
+      "min": 15,
+      "max": 150,
+      "step": 5,
+      "unit": "px",
+      "default": 40,
+      "label": "t:sections.all.content_settings.content_padding_block.label"
+    },
+    {
+      "type": "range",
+      "id": "content_padding_inline",
+      "min": 0,
+      "max": 150,
+      "step": 5,
+      "unit": "px",
+      "default": 40,
+      "label": "t:sections.all.content_settings.content_padding_inline.label"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Content"
+    }
+  ]
+}
+{% endschema %}

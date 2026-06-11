@@ -91,6 +91,22 @@
         --color-badge-background: {{ scheme.settings.background.red }},{{ scheme.settings.background.green }},{{ scheme.settings.background.blue }};
         --color-badge-border: {{ scheme.settings.text.red }},{{ scheme.settings.text.green }},{{ scheme.settings.text.blue }};
         --payment-terms-background-color: rgb({{ scheme.settings.background.rgb }});
+
+        --color-border: {{ scheme.settings.border_color }};
+        --color-heading: {{ scheme.settings.heading_color }};
+        --color-text: {{ scheme.settings.text }};
+         /* Button outline */
+        --btn-outline-color: {{ scheme.settings.secondary_button_label }};
+        --btn-outline-border-color: {{ scheme.settings.btn_outline_border_color }};
+        /* Button primary */
+        --btn-primary-color: {{ scheme.settings.btn_primary_color }};
+        --btn-primary-hover-color: {{ scheme.settings.btn_primary_hover_color }};
+        --btn-primary-bg-color: {{ scheme.settings.btn_primary_background }};
+        --btn-primary-hover-bg-color: {{ scheme.settings.btn_primary_hover_background }};
+        --btn-primary-hover-bg-color-gradient: {{ scheme.settings.btn_primary_hover_background }};
+
+        --color-white: #fff;
+        --color-dark: #111;
       }
       {% endfor %}
 
@@ -220,6 +236,20 @@
         --variant-pills-shadow-horizontal-offset: {{ settings.variant_pills_shadow_horizontal_offset }}px;
         --variant-pills-shadow-vertical-offset: {{ settings.variant_pills_shadow_vertical_offset }}px;
         --variant-pills-shadow-blur-radius: {{ settings.variant_pills_shadow_blur }}px;
+
+        /* Custom */
+        --bs-gutter-x: 1.5rem;
+        --fluid-container-width: {{ settings.fluid_container_width }}px;
+        --responsive-rate: ((100vw - 575px) / (1600 - 575));
+        --heading-letter-spacing: {% if settings.heading_letter_spacing == 'negative' %}-0.034em{% else %}{{ settings.heading_letter_spacing }}{% endif %};
+        --color-white: #FFF;
+        --body-font-size: {{ settings.body_font_size }}px;
+
+        --btn-padding-y: 1.5rem;
+        --btn-padding-x: 3rem;
+        --btn-font-size: var(--body-font-size, 1.4rem);
+        --btn-letter-spacing:  {% if settings.heading_letter_spacing == 'negative' %}calc(var(--heading-letter-spacing) + 0.01em){% else %}calc(var(--heading-letter-spacing) - 0.01em){% endif %};
+        --transition: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
       }
 
       *,
@@ -250,12 +280,14 @@
 
       @media screen and (min-width: 750px) {
         body {
-          font-size: 1.6rem;
+          font-size: 1.5rem;
         }
       }
     {% endstyle %}
 
     {{ 'base.css' | asset_url | stylesheet_tag }}
+
+    {{ 'custom.css' | asset_url | stylesheet_tag }}
     <link rel="stylesheet" href="{{ 'component-cart-items.css' | asset_url }}" media="print" onload="this.media='all'">
 
     {%- if settings.cart_type == 'drawer' -%}

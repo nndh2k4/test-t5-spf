@@ -1,0 +1,142 @@
+{%- liquid
+  assign section_st = section.settings
+  assign section_width = section_st.section_width
+-%}
+{%- capture style -%}
+  --section-pt: {{ section_st.padding_top }}; --section-pb: {{ section_st.padding_bottom }};--max-width: 50rem;
+{%- endcapture -%}
+
+{%- style -%}
+  .faq-section-items.active .faq-section-title {
+    color: var(--color-heading);
+  }
+
+  #FaqsPage-{{ section.id }} .icon_plus-animation {
+    width: 40px;
+    height: 100%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+    cursor: pointer;
+  }
+
+  #FaqsPage-{{ section.id }} .icon_plus-animation:before,
+  #FaqsPage-{{ section.id }} .icon_plus-animation:after {
+    content: '';
+    width: 12px;
+    height: 1px;
+    background-color: currentColor;
+    position: absolute;
+    transition: all 0.3s ease-out;
+  }
+
+  #FaqsPage-{{ section.id }} .icon_plus-animation:after {
+    transform: rotate(90deg);
+  }
+
+  #FaqsPage-{{ section.id }} .faq-section-content {
+    max-height: 0;
+    opacity: 0;
+    transition:
+      max-height 0.3s ease,
+      opacity 0.2s ease;
+  }
+
+  #FaqsPage-{{ section.id }} .faq-section-items.active .faq-section-content {
+    max-height: var(--faq-content-height, 0px);
+    opacity: 1;
+  }
+
+  #FaqsPage-{{ section.id }} .faq-section-items.active .open-children-toggle .icon_plus-animation:before,
+  #FaqsPage-{{ section.id }} .faq-section-items.active .open-children-toggle .icon_plus-animation:after {
+    transform: rotate(180deg);
+  }
+{%- endstyle -%}
+
+<section
+  id="FaqsPage-{{ section.id }}"
+  class="section{% if section_st.padding_top < 30 %} pt-min{% endif %}{% if section_st.padding_bottom < 30 %} pb-min{% endif %} faqs-page"
+  style="{{ style | strip | strip_newlines }}"
+>
+  <div class="{{ section_width }}">
+    <div class="faqs-content flex-wrap flex gap" style="--col-gap: 50px">
+      {% content_for 'blocks' %}
+    </div>
+  </div>
+</section>
+
+<script src="{{ 'custom-collapse.js' | asset_url }}" defer="defer"></script>
+
+{% schema %}
+{
+  "name": "t:sections.faqs-page.name",
+  "disabled_on": {
+    "groups": ["custom.overlay", "header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "select",
+      "id": "section_width",
+      "label": "t:sections.all.section_width.label",
+      "default": "container",
+      "options": [
+        {
+          "value": "container",
+          "label": "t:sections.all.section_width.container.label"
+        },
+        {
+          "value": "fluid_container",
+          "label": "t:sections.all.section_width.fluid_container.label"
+        },
+        {
+          "value": "stretch_width",
+          "label": "t:sections.all.section_width.stretch_width.label"
+        },
+        {
+          "value": "full_width",
+          "label": "t:sections.all.section_width.full_width.label"
+        }
+      ]
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.section_padding.label"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "label": "t:sections.all.section_padding.top.label",
+      "default": 0,
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "label": "t:sections.all.section_padding.bottom.label",
+      "default": 0,
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "unit": "px"
+    }
+  ],
+  "max_blocks": 2,
+  "blocks": [
+    {
+      "type": "_c_message-page-faqs"
+    },
+    {
+      "type": "_c_group-page-faq-content"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Custom FAQs Page"
+    }
+  ]
+}
+{% endschema %}
