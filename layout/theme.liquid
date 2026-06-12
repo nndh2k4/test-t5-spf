@@ -250,7 +250,10 @@
         --btn-font-size: var(--body-font-size, 1.4rem);
         --btn-letter-spacing:  {% if settings.heading_letter_spacing == 'negative' %}calc(var(--heading-letter-spacing) + 0.01em){% else %}calc(var(--heading-letter-spacing) - 0.01em){% endif %};
         --transition: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+
+         --section-spacing: {{ settings.space_mobile }}px;
       }
+
 
       *,
       *::before,
@@ -281,6 +284,12 @@
       @media screen and (min-width: 750px) {
         body {
           font-size: 1.5rem;
+        }
+      }
+
+      @media (min-width: 768px) {
+        :root{
+          --section-spacing: {{ settings.spacing_desktop }}px;
         }
       }
     {% endstyle %}

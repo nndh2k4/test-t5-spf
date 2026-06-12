@@ -1,7 +1,20 @@
 {%- liquid
   assign section_st = section.settings
   assign section_width = section_st.section_width
+  
+  assign header_size = ''
+  if section_st.header_size == 'small'
+    assign header_size = 'h3'
+  elsif section_st.header_size == 'large'
+    assign header_size = 'h1-size'
+  endif
+
+  if section_st.reset_spacing
+    assign reset_spacing = ' remove_spacing'
+  endif
 -%}
+
+
 {%- capture style -%}
   --section-pt: {{ section_st.padding_top }}; --section-pb: {{ section_st.padding_bottom }};--max-width: 50rem;
 {%- endcapture -%}
@@ -56,10 +69,25 @@
 
 <section
   id="FaqsPage-{{ section.id }}"
-  class="section{% if section_st.padding_top < 30 %} pt-min{% endif %}{% if section_st.padding_bottom < 30 %} pb-min{% endif %} faqs-page"
+  class="section color-{{ section_st.color_scheme }}{% if section_st.padding_top < 30 %} pt-min{% endif %}{% if section_st.padding_bottom < 30 %} pb-min{% endif %} faqs-page {{ reset_spacing }}"
   style="{{ style | strip | strip_newlines }}"
 >
   <div class="{{ section_width }}">
+    {% if section.settings.heading != blank or section.settings.description != blank %}
+      <div class="section__header mb-33 mb-sm-20 text-{{ section.settings.header_alignment }} {% if section.settings.section_width == 'full_width' %} px-20{% endif %}">
+        {% if section.settings.heading != blank %}
+          <h2 class="section__header-heading {{ header_size }} heading-letter-spacing mt-0 {% if section.settings.description != blank %}mb-10{% else %}mb-0{% endif %}">
+            {{ section.settings.heading }}
+          </h2>
+        {% endif %}
+
+        {% if section.settings.description != blank %}
+          <div class="section__header-description heading-letter-spacing block rich__text-m0">
+            {{ section.settings.description }}
+          </div>
+        {% endif %}
+      </div>
+    {% endif %}
     <div class="faqs-content flex-wrap flex gap" style="--col-gap: 50px">
       {% content_for 'blocks' %}
     </div>
@@ -74,6 +102,8 @@
   "disabled_on": {
     "groups": ["custom.overlay", "header", "footer"]
   },
+  "tag": "section",
+  "class": "section",
   "settings": [
     {
       "type": "select",
@@ -100,6 +130,67 @@
       ]
     },
     {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:sections.all.colors.label",
+      "default": "default-color-scheme"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.section_header.label"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "default": "FAQ",
+      "label": "t:sections.all.section_header.heading.label"
+    },
+    {
+      "type": "richtext",
+      "id": "description",
+      "label": "t:sections.all.section_header.description.label"
+    },
+    {
+      "type": "select",
+      "id": "header_size",
+      "label": "t:sections.all.section_header.header_size.label",
+      "default": "medium",
+      "options": [
+        {
+          "value": "small",
+          "label": "t:sections.all.section_header.header_size.small.label"
+        },
+        {
+          "value": "medium",
+          "label": "t:sections.all.section_header.header_size.medium.label"
+        },
+        {
+          "value": "large",
+          "label": "t:sections.all.section_header.header_size.large.label"
+        }
+      ]
+    },
+    {
+      "type": "select",
+      "id": "header_alignment",
+      "label": "t:sections.all.section_header.alignment.label",
+      "default": "center",
+      "options": [
+        {
+          "value": "left",
+          "label": "t:sections.all.content_settings.content_alignment.left.label"
+        },
+        {
+          "value": "center",
+          "label": "t:sections.all.content_settings.content_alignment.center.label"
+        },
+        {
+          "value": "right",
+          "label": "t:sections.all.content_settings.content_alignment.right.label"
+        }
+      ]
+    },
+    {
       "type": "header",
       "content": "t:sections.all.section_padding.label"
     },
@@ -122,6 +213,12 @@
       "max": 100,
       "step": 2,
       "unit": "px"
+    },
+    {
+      "type": "checkbox",
+      "id": "reset_spacing",
+      "label": "t:sections.all.section_padding.reset_spacing.label",
+      "default": false
     }
   ],
   "max_blocks": 2,

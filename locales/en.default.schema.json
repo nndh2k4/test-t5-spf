@@ -228,6 +228,17 @@
         }
       }
     },
+    "section": {
+      "name": "Section",
+      "settings": {
+        "spacing_desktop": {
+          "label": "Space between sections on desktop"
+        },
+        "space_mobile": {
+          "label": "Space between sections on mobile"
+        }
+      }
+    },
     "typography": {
       "name": "Typography",
       "settings": {

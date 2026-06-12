@@ -9,89 +9,6 @@
  */
 {
   "sections": {
-    "custom_collapsible_content_WfJTYM": {
-      "type": "custom-collapsible-content",
-      "blocks": {
-        "faq_items_CRK7nL": {
-          "type": "faq-items",
-          "settings": {
-            "faq_title": "Frequently Asked Questions?",
-            "faq_content": "Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore."
-          }
-        },
-        "faq_items_BJmchh": {
-          "type": "faq-items",
-          "settings": {
-            "faq_title": "Frequently Asked Questions?",
-            "faq_content": "Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore."
-          }
-        },
-        "faq_items_fQ4wRd": {
-          "type": "faq-items",
-          "settings": {
-            "faq_title": "Frequently Asked Questions?",
-            "faq_content": "Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore."
-          }
-        },
-        "faq_items_Hiby9X": {
-          "type": "faq-items",
-          "settings": {
-            "faq_title": "Frequently Asked Questions?",
-            "faq_content": "Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore."
-          }
-        },
-        "faq_items_TfJV4F": {
-          "type": "faq-items",
-          "settings": {
-            "faq_title": "Frequently Asked Questions?",
-            "faq_content": "Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore."
-          }
-        },
-        "faq_items_VBFKt3": {
-          "type": "faq-items",
-          "settings": {
-            "faq_title": "Frequently Asked Questions?",
-            "faq_content": "Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore."
-          }
-        },
-        "faq_items_hxriMx": {
-          "type": "faq-items",
-          "settings": {
-            "faq_title": "Frequently Asked Questions?",
-            "faq_content": "Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore."
-          }
-        },
-        "faq_items_X4qzJC": {
-          "type": "faq-items",
-          "settings": {
-            "faq_title": "Frequently Asked Questions?",
-            "faq_content": "Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore."
-          }
-        }
-      },
-      "block_order": [
-        "faq_items_CRK7nL",
-        "faq_items_BJmchh",
-        "faq_items_fQ4wRd",
-        "faq_items_Hiby9X",
-        "faq_items_TfJV4F",
-        "faq_items_VBFKt3",
-        "faq_items_hxriMx",
-        "faq_items_X4qzJC"
-      ],
-      "name": "Custom Collapsible",
-      "settings": {
-        "section_width": "container",
-        "color_scheme": "",
-        "heading": "Help Center",
-        "description": "<p>Please use the below form. You can also call customer service on +1 (973) 435-3638.</p>",
-        "header_size": "medium",
-        "header_alignment": "center",
-        "padding_top": 100,
-        "padding_bottom": 100,
-        "reset_spacing": false
-      }
-    },
     "custom_page_faq_q9PAAU": {
       "type": "custom-page-faq",
       "blocks": {
@@ -188,7 +105,7 @@
                   "type": "_c_faq-item",
                   "name": "t:sections.faqs-page.blocks.question.name",
                   "settings": {
-                     "faq_title": "Pellentesque habitant morbi tristique senectus et netus?",
+                    "faq_title": "Pellentesque habitant morbi tristique senectus et netus?",
                     "faq_content": "Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore."
                   },
                   "blocks": {}
@@ -422,13 +339,62 @@
       "name": "Custom FAQs Page",
       "settings": {
         "section_width": "container",
+        "color_scheme": "scheme-1",
+        "heading": "Help Center",
+        "description": "<p>Please use the below form. You can also call customer service on +1 (973) 435-3638.</p>",
+        "header_size": "large",
+        "header_alignment": "center",
         "padding_top": 50,
-        "padding_bottom": 58
+        "padding_bottom": 58,
+        "reset_spacing": true
+      }
+    },
+    "custom_collapsible_content_9VHHXy": {
+      "type": "custom-collapsible-content",
+      "blocks": {
+        "faq_items_qjEkJQ": {
+          "type": "faq-items",
+          "settings": {
+            "faq_title": "Frequently Asked Questions?",
+            "faq_content": "Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore."
+          }
+        },
+        "faq_items_FgPnTY": {
+          "type": "faq-items",
+          "settings": {
+            "faq_title": "Frequently Asked Questions?",
+            "faq_content": "Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore."
+          }
+        },
+        "faq_items_rFbXqA": {
+          "type": "faq-items",
+          "settings": {
+            "faq_title": "Frequently Asked Questions?",
+            "faq_content": "Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore."
+          }
+        }
+      },
+      "block_order": [
+        "faq_items_qjEkJQ",
+        "faq_items_FgPnTY",
+        "faq_items_rFbXqA"
+      ],
+      "name": "t:sections.faq.presets.name",
+      "settings": {
+        "section_width": "container",
+        "color_scheme": "",
+        "heading": "FAQ",
+        "description": "",
+        "header_size": "medium",
+        "header_alignment": "center",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "reset_spacing": false
       }
     }
   },
   "order": [
-    "custom_collapsible_content_WfJTYM",
-    "custom_page_faq_q9PAAU"
+    "custom_page_faq_q9PAAU",
+    "custom_collapsible_content_9VHHXy"
   ]
 }

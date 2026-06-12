@@ -241,6 +241,31 @@
       }
     ]
   },
+   {
+    "name": "t:settings_schema.section.name",
+    "settings": [
+      {
+        "type": "range",
+        "id": "spacing_desktop",
+        "min": 0,
+        "max": 100,
+        "step": 5,
+        "unit": "px",
+        "label": "t:settings_schema.section.settings.spacing_desktop.label",
+        "default": 100
+      },
+      {
+        "type": "range",
+        "id": "space_mobile",
+        "min": 0,
+        "max": 100,
+        "step": 5,
+        "unit": "px",
+        "label": "t:settings_schema.section.settings.space_mobile.label",
+        "default": 60
+      }
+    ]
+  },
   {
     "name": "t:settings_schema.layout.name",
     "settings": [
